@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #9294ff, #29c8dd);
+  color: white;
+}
+
+header {
+  font-size: 1rem;
+}
+
+header,
+.myFormDiv {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myFormDiv input,
+.myFormDiv button {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.myFormDiv button {
+  color: #006eff;
+  background-color: #b9c4f8;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+.myFormDiv button:hover {
+  background-color: #0084ff;
+  color: #d6e2fc;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#myMainDiv {
+  min-width: 20%;
+  list-style: none;
+  border: darkblue solid 2px;
+  min-height: 300px;
+}
+
+.myTaskList {
+  margin: 10px;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myTask {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  padding: 5px;
+}
+
+#trashIcon {
+  pointer-events: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.check_button {
+  padding: 20px;
+  border: solid 20px black;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.myTask {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.change_button {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.delete_button {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}

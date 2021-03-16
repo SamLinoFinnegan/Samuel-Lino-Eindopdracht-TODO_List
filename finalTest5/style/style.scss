@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(120deg, rgb(146, 148, 255), rgb(41, 200, 221)) ;
+    color: white;
+}
+header{
+    font-size: 1rem;
+}
+header, 
+.myFormDiv{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myFormDiv input,
+.myFormDiv button{
+    padding: 5px;
+   border-radius: 5px;
+}
+.myFormDiv button{
+    color: rgb(0, 110, 255);
+    background-color: rgb(185, 196, 248);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 100ms ease-in ;
+}
+
+.myFormDiv button:hover{
+    background-color: rgb(0, 132, 255);
+    color: rgb(214, 226, 252);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myMainDiv{
+    min-width: 20%;
+    list-style: none;
+    border: darkblue solid 2px;
+    min-height: 300px;
+}
+.myTaskList{
+    margin: 10px;
+    padding: 5px;
+    background-color:white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myTask{
+
+    flex: 1;
+    border: none;
+    padding: 5px;
+    
+}
+#trashIcon{
+    pointer-events: none;
+}
+.done{
+    text-decoration: line-through;
+}
+.check_button{
+    padding: 20px;
+    border: solid 20px black;
+    order: 1;
+}
+.myTask{
+    order: 2;
+}
+.change_button{
+    order: 3;
+}
+.delete_button{
+    order: 4;
+}
